@@ -1,53 +1,41 @@
 <template>
   <div class="wrapper">
-    <h1>Welcome to Vue Learning Page</h1>
-    <p>UserName: {{ username }}</p>
-    <p>Count: {{ count }}</p>
-    <p>{{ count !=0  ? "Clicked button!" : "Default count" }}</p>
-    <button @click="countUp()" :disabled="isBtnDisabled">Count Up</button>
-    <MyButton></MyButton>
+    <h1>
+      Welcome to {{ userInfo.name ? userInfo.name : "Language Learning Site" }}
+    </h1>
   </div>
 </template>
 
 <script>
-import MyButton from "@/components/MyButton.vue";
 export default {
   name: "home",
 
-  components: {
-    MyButton,
-  },
+  components: {},
 
   data() {
     return {
-      username: "Mg Mg",
-      count: 0,
-      isBtnDisabled: false,
+      userInfo: {},
     };
   },
 
   created() {
-    console.log("hello");
+    this.userInfo = this.$store.state.userInfo;
+
+    this.$store.watch(
+      () => {
+        return this.$store.state.userInfo;
+      },
+      (newVal, oldVal) => {
+        this.userInfo = newVal;
+      },
+      {
+        deep: true,
+      }
+    );
   },
 
-  methods: {
-    countUp() {
-      this.count++;
-    },
-  },
+  methods: {},
 };
 </script>
 
-<style>
-.wrapper{
-  padding: 20px;
-}
-button {
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid blue;
-  border-radius: 5px;
-  color: blue;
-}
-
-</style>
+<style></style>
