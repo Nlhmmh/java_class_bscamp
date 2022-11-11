@@ -1,4 +1,5 @@
 <template>
+ 
     <div>
       <v-container>
         <v-card class="pa-5 mt-10" elevation="4" max-width="300">
@@ -8,12 +9,13 @@
           ></v-img>
           <v-card-title>About This Home page</v-card-title>
           <v-card-actions>
-            <v-btn color="primary" elevation="10" @click="routToBack()">See More</v-btn>
+            <v-btn color="primary" elevation="10" >See More</v-btn>
             <v-btn disabled> Disabled </v-btn>
           </v-card-actions>
         </v-card>
       </v-container>
     </div>
+    
   </template>
 
 <script>
@@ -21,7 +23,7 @@ import router from '@/router';
 
 export default{
     data:()=>({
-      
+    
     }),
     
     created(){
@@ -29,9 +31,7 @@ export default{
     },
 
     methods:{
-        routToBack(){
-            router.back()
-        }
+       
     }
 }
 </script>
