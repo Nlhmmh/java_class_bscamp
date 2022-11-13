@@ -37,8 +37,15 @@ public class BookServiceImpl implements BookServiceInter {
 		if (findBook == null) {
 			return null;
 		}
-		book.setUpdatedAt(LocalDateTime.now());
-		return repo.save(book);
+		
+		findBook.setName(book.getName());
+		findBook.setAuthor(book.getAuthor());
+		findBook.setPrice(book.getPrice());
+		findBook.setType(book.getType());
+		findBook.setPublishedDate(book.getPublishedDate());
+		findBook.setUpdatedAt(LocalDateTime.now());
+	
+		return repo.save(findBook);
 	}
 
 	@Override
