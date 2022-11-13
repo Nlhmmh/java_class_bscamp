@@ -34,10 +34,15 @@ public class BookServiceImpl implements BookService {
 	public Book update(Book book) {
 		Book findBook = repo.findById(book.getId()).orElse(null);
 		if (findBook == null) {
-
 			return null;
 		}
-		book.setUpdatedAt(LocalDateTime.now());
+		
+		findBook.setName(book.getName());
+		findBook.setAuthor(book.getAuthor());
+		findBook.setPrice(book.getPrice());
+		findBook.setType(book.getType());
+		findBook.setPublishedDate(book.getPublishedDate());
+		findBook.setUpdatedAt(LocalDateTime.now());
 		return repo.save(findBook);
 	}
 
