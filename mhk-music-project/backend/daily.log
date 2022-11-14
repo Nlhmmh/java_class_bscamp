@@ -1,0 +1,871 @@
+2022-11-14 18:43:39.684  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : Starting MusicApplication using Java 17.0.4.1 on MayHninKyi with PID 11916 (D:\javaDev\music\target\classes started by Lenovo in D:\javaDev\music)
+2022-11-14 18:43:39.691  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-11-14 18:43:39.760  INFO 11916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-14 18:43:39.761  INFO 11916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-14 18:43:40.495  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-14 18:43:40.497  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-14 18:43:40.532  INFO 11916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mhk.music.repo.MusicRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-11-14 18:43:40.533  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 0 JDBC repository interfaces.
+2022-11-14 18:43:40.544  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-14 18:43:40.546  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 18:43:40.574  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2022-11-14 18:43:41.337  INFO 11916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-14 18:43:41.347  INFO 11916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-14 18:43:41.347  INFO 11916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-14 18:43:41.424  INFO 11916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-14 18:43:41.424  INFO 11916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1662 ms
+2022-11-14 18:43:41.675 DEBUG 11916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2022-11-14 18:43:41.711  INFO 11916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 18:43:41.761  INFO 11916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-11-14 18:43:41.937  INFO 11916 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-11-14 18:43:42.043  INFO 11916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-11-14 18:43:42.473  INFO 11916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-11-14 18:43:42.492  INFO 11916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-14 18:43:43.221  INFO 11916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 18:43:43.233  INFO 11916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 18:43:43.344 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 18:43:43.410 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 18:43:43.493 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 18:43:43.614  WARN 11916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 18:43:43.762 DEBUG 11916 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-14 18:43:43.859 DEBUG 11916 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-11-14 18:43:43.887 DEBUG 11916 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-14 18:43:43.898 DEBUG 11916 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-14 18:43:44.062  INFO 11916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-14 18:43:44.104  INFO 11916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-14 18:43:44.118  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : Started MusicApplication in 4.87 seconds (JVM running for 5.674)
+2022-11-14 18:51:27.814  INFO 11916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-14 18:51:27.814  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-14 18:51:27.814 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-14 18:51:27.814 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-14 18:51:27.815 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-14 18:51:27.816 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@8e2647e
+2022-11-14 18:51:27.817 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@551ac8ac
+2022-11-14 18:51:27.817 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-14 18:51:27.818  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-11-14 18:51:27.853 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/music", parameters={}
+2022-11-14 18:51:27.866 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 18:51:27.871 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 18:51:27.904 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 18:51:27.905 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 18:51:27.924 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 18:51:27.925 DEBUG 11916 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 18:51:27.928 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 18:51:27.967 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(985408741<open>)] for JPA transaction
+2022-11-14 18:51:27.967 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 18:51:27.980 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2b709280]
+2022-11-14 18:51:27.981 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 18:51:28.267 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 18:51:28.311 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 18:51:28.312 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 18:51:28.312 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(985408741<open>)]
+2022-11-14 18:51:28.314 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 18:51:28.340 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 18:51:28.342 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 18:51:28.430 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 18:51:28.432 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:10:20.222 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:10:20.223 DEBUG 11916 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:10:20.225 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:10:20.226 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(190993858<open>)] for JPA transaction
+2022-11-14 19:10:20.226 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:10:20.229 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5a5bade]
+2022-11-14 19:10:20.230 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:10:20.231 DEBUG 11916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:10:20.236 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:10:20.236 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:10:20.236 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(190993858<open>)]
+2022-11-14 19:10:20.239 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:10:20.240 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:10:20.241 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:10:20.243 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:10:20.244 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:10:20.502 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:10:20.503 DEBUG 11916 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:10:20.504 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:10:20.505 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(487326394<open>)] for JPA transaction
+2022-11-14 19:10:20.505 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:10:20.507 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@13cbef6b]
+2022-11-14 19:10:20.507 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:10:20.508 DEBUG 11916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:10:20.512 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:10:20.512 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:10:20.512 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(487326394<open>)]
+2022-11-14 19:10:20.514 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:10:20.515 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:10:20.516 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:10:20.518 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:10:20.519 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:11:22.436 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:11:22.437 DEBUG 11916 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:11:22.439 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:11:22.441 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(644283982<open>)] for JPA transaction
+2022-11-14 19:11:22.441 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:11:22.444 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@636474e6]
+2022-11-14 19:11:22.444 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:11:22.445 DEBUG 11916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:11:22.449 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:11:22.449 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:11:22.449 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(644283982<open>)]
+2022-11-14 19:11:22.451 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:11:22.452 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:11:22.453 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:11:22.455 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:11:22.455 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:11:51.840 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:11:51.841 DEBUG 11916 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:11:51.843 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:11:51.844 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(446811160<open>)] for JPA transaction
+2022-11-14 19:11:51.844 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:11:51.847 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1466213c]
+2022-11-14 19:11:51.847 TRACE 11916 --- [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:11:51.848 DEBUG 11916 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:11:51.853 TRACE 11916 --- [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:11:51.854 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:11:51.854 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(446811160<open>)]
+2022-11-14 19:11:51.856 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:11:51.857 DEBUG 11916 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:11:51.857 DEBUG 11916 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:11:51.859 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:11:51.860 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:12:17.042 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:12:17.044 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:12:17.047 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:17.049 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2032000358<open>)] for JPA transaction
+2022-11-14 19:12:17.050 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:12:17.058 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@36e7360e]
+2022-11-14 19:12:17.059 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:12:17.061 DEBUG 11916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:12:17.072 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:12:17.073 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:12:17.074 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2032000358<open>)]
+2022-11-14 19:12:17.080 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:12:17.082 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:12:17.083 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:12:17.089 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:17.091 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:12:33.835 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/music", parameters={}
+2022-11-14 19:12:33.836 DEBUG 11916 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#save(Music)
+2022-11-14 19:12:33.837 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:33.916 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=0, name=yes or yes, type=null, singer=Twice, publishedDate=2022-10-01, createdAt=null, upd (truncated)...]
+2022-11-14 19:12:33.933 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1870290731<open>)] for JPA transaction
+2022-11-14 19:12:33.934 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 19:12:33.935 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2838d048]
+2022-11-14 19:12:33.936 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:12:33.960 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-11-14 19:12:33.970 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-11-14 19:12:34.003 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:12:34.004 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:12:34.004 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1870290731<open>)]
+2022-11-14 19:12:34.019 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : insert into music (created_at, name, published_date, singer, type, updated_at, id) values (?, ?, ?, ?, ?, ?, ?)
+2022-11-14 19:12:34.022 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2022-11-14T19:12:33.933513]
+2022-11-14 19:12:34.023 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [yes or yes]
+2022-11-14 19:12:34.024 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-10-01]
+2022-11-14 19:12:34.024 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Twice]
+2022-11-14 19:12:34.024 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2022-11-14 19:12:34.025 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [null]
+2022-11-14 19:12:34.026 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [4]
+2022-11-14 19:12:34.044 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:12:34.048 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:12:34.048 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Music [id=4, name=yes or yes, type=null, singer=Twice, publishedDate=2022-10-01, createdAt=2022-11-1 (truncated)...]
+2022-11-14 19:12:34.050 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:34.051 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:12:34.055 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:12:34.056 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:12:34.057 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:34.058 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1207242432<open>)] for JPA transaction
+2022-11-14 19:12:34.059 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:12:34.062 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@57e94889]
+2022-11-14 19:12:34.062 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:12:34.063 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:12:34.068 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:12:34.068 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:12:34.069 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1207242432<open>)]
+2022-11-14 19:12:34.071 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:12:34.072 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:12:34.072 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:12:34.077 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:12:34.077 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:13:19.720 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:13:19.721 DEBUG 11916 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:13:19.722 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:19.723 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1622042706<open>)] for JPA transaction
+2022-11-14 19:13:19.723 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:13:19.725 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2d9638db]
+2022-11-14 19:13:19.726 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:13:19.727 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:13:19.731 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:13:19.732 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:13:19.732 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1622042706<open>)]
+2022-11-14 19:13:19.734 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:13:19.735 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:13:19.735 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:13:19.737 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:19.737 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:13:35.624 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/music", parameters={}
+2022-11-14 19:13:35.625 DEBUG 11916 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#save(Music)
+2022-11-14 19:13:35.626 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:35.627 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=0, name=TT, type=null, singer=Twice, publishedDate=2022-10-01, createdAt=null, updatedAt=n (truncated)...]
+2022-11-14 19:13:35.627 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(315640088<open>)] for JPA transaction
+2022-11-14 19:13:35.628 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 19:13:35.629 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1c17b532]
+2022-11-14 19:13:35.629 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:13:35.630 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-11-14 19:13:35.632 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-11-14 19:13:35.638 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:13:35.638 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:13:35.638 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(315640088<open>)]
+2022-11-14 19:13:35.639 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : insert into music (created_at, name, published_date, singer, type, updated_at, id) values (?, ?, ?, ?, ?, ?, ?)
+2022-11-14 19:13:35.639 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2022-11-14T19:13:35.627418800]
+2022-11-14 19:13:35.640 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [TT]
+2022-11-14 19:13:35.640 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-10-01]
+2022-11-14 19:13:35.640 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Twice]
+2022-11-14 19:13:35.640 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [null]
+2022-11-14 19:13:35.641 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [null]
+2022-11-14 19:13:35.641 TRACE 11916 --- [http-nio-8080-exec-3] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [5]
+2022-11-14 19:13:35.646 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:13:35.646 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:13:35.646 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Music [id=5, name=TT, type=null, singer=Twice, publishedDate=2022-10-01, createdAt=2022-11-14T19:13: (truncated)...]
+2022-11-14 19:13:35.648 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:35.648 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:13:35.653 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:13:35.653 DEBUG 11916 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:13:35.654 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:35.655 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1043154396<open>)] for JPA transaction
+2022-11-14 19:13:35.656 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:13:35.657 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@20f997ac]
+2022-11-14 19:13:35.657 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:13:35.658 DEBUG 11916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:13:35.661 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:13:35.661 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:13:35.661 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1043154396<open>)]
+2022-11-14 19:13:35.663 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:13:35.664 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:13:35.664 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:13:35.665 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:13:35.665 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:14:49.881 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:14:49.883 DEBUG 11916 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:14:49.885 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:14:49.888 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(457409690<open>)] for JPA transaction
+2022-11-14 19:14:49.889 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:14:49.894 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5e410996]
+2022-11-14 19:14:49.895 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:14:49.897 DEBUG 11916 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:14:49.908 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:14:49.908 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:14:49.909 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(457409690<open>)]
+2022-11-14 19:14:49.914 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:14:49.916 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:14:49.917 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:14:49.920 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:14:49.924 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:27:15.194 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/music", parameters={}
+2022-11-14 19:27:15.196 DEBUG 11916 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:27:15.197 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:27:15.199 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:27:15.199 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:27:15.210 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:27:15.211 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:27:15.213 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:27:15.214 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1117006050<open>)] for JPA transaction
+2022-11-14 19:27:15.215 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:27:15.220 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@52867330]
+2022-11-14 19:27:15.221 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:27:15.223 DEBUG 11916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:27:15.234 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:27:15.234 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:27:15.235 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1117006050<open>)]
+2022-11-14 19:27:15.239 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:27:15.241 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:27:15.242 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:27:15.245 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:27:15.247 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:28:48.524 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:28:48.526 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:28:48.528 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:28:48.529 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1509409568<open>)] for JPA transaction
+2022-11-14 19:28:48.529 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:28:48.533 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@58f4d2e6]
+2022-11-14 19:28:48.533 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:28:48.535 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:28:48.544 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:28:48.545 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:28:48.545 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1509409568<open>)]
+2022-11-14 19:28:48.549 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:28:48.550 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:28:48.551 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:28:48.555 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:28:48.556 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:32:52.317 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:32:52.318 DEBUG 11916 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:32:52.318 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:32:52.318 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1023754310<open>)] for JPA transaction
+2022-11-14 19:32:52.319 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:32:52.320 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@65d69186]
+2022-11-14 19:32:52.320 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:32:52.321 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:32:52.323 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:32:52.323 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:32:52.324 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1023754310<open>)]
+2022-11-14 19:32:52.325 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:32:52.325 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:32:52.326 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:32:52.327 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:32:52.327 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:36:07.077 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:36:07.078 DEBUG 11916 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:36:07.078 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:36:07.079 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(215361846<open>)] for JPA transaction
+2022-11-14 19:36:07.079 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:36:07.082 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1e189202]
+2022-11-14 19:36:07.083 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:36:07.084 DEBUG 11916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:36:07.089 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:36:07.089 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:36:07.089 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(215361846<open>)]
+2022-11-14 19:36:07.091 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:36:07.092 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:36:07.092 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:36:07.094 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:36:07.094 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:48:21.398 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:48:21.399 DEBUG 11916 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:48:21.400 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:48:21.401 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1489812024<open>)] for JPA transaction
+2022-11-14 19:48:21.401 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:48:21.404 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@705744b]
+2022-11-14 19:48:21.404 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:48:21.405 DEBUG 11916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:48:21.410 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:48:21.411 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:48:21.411 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1489812024<open>)]
+2022-11-14 19:48:21.413 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:48:21.414 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:48:21.414 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:48:21.416 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:48:21.417 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:50:26.022 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:50:26.023 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:50:26.024 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:50:26.026 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1058449374<open>)] for JPA transaction
+2022-11-14 19:50:26.026 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:50:26.028 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@61505607]
+2022-11-14 19:50:26.028 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:50:26.031 DEBUG 11916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:50:26.035 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:50:26.035 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:50:26.035 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1058449374<open>)]
+2022-11-14 19:50:26.037 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:50:26.039 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:50:26.039 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:50:26.042 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:50:26.042 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:51:48.959 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/music", parameters={}
+2022-11-14 19:51:48.959 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#save(Music)
+2022-11-14 19:51:48.960 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:51:48.963 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=0, name=more and more, type=pop, singer=twice, publishedDate=2022-10-01, createdAt=null, u (truncated)...]
+2022-11-14 19:51:48.964 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1655311400<open>)] for JPA transaction
+2022-11-14 19:51:48.964 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 19:51:48.965 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1e426651]
+2022-11-14 19:51:48.966 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:51:48.974 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-11-14 19:51:48.976 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-11-14 19:51:48.982 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:51:48.982 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:51:48.982 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1655311400<open>)]
+2022-11-14 19:51:48.983 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : insert into music (created_at, name, published_date, singer, type, updated_at, id) values (?, ?, ?, ?, ?, ?, ?)
+2022-11-14 19:51:48.984 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2022-11-14T19:51:48.963081100]
+2022-11-14 19:51:48.984 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [more and more]
+2022-11-14 19:51:48.984 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-10-01]
+2022-11-14 19:51:48.984 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [twice]
+2022-11-14 19:51:48.984 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [pop]
+2022-11-14 19:51:48.985 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [null]
+2022-11-14 19:51:48.985 TRACE 11916 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [6]
+2022-11-14 19:51:48.990 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:51:48.992 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:51:48.992 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Music [id=6, name=more and more, type=pop, singer=twice, publishedDate=2022-10-01, createdAt=2022-11 (truncated)...]
+2022-11-14 19:51:48.993 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:51:48.993 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:51:49.002 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:51:49.003 DEBUG 11916 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:51:49.003 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:51:49.004 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(899748923<open>)] for JPA transaction
+2022-11-14 19:51:49.004 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:51:49.005 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@143fe657]
+2022-11-14 19:51:49.005 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:51:49.006 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:51:49.009 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:51:49.010 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:51:49.010 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(899748923<open>)]
+2022-11-14 19:51:49.012 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:51:49.013 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:51:49.014 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:51:49.016 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:51:49.016 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:54:12.770 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:54:12.771 DEBUG 11916 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:54:12.772 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:54:12.772 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1166137154<open>)] for JPA transaction
+2022-11-14 19:54:12.772 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:54:12.774 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@702a961e]
+2022-11-14 19:54:12.774 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:54:12.775 DEBUG 11916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:54:12.779 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:54:12.779 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:54:12.779 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1166137154<open>)]
+2022-11-14 19:54:12.781 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:54:12.781 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:54:12.782 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:54:12.784 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:54:12.784 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:56:37.460 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:56:37.461 DEBUG 11916 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:56:37.463 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:56:37.464 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1489738014<open>)] for JPA transaction
+2022-11-14 19:56:37.465 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:56:37.468 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@6e4d80f1]
+2022-11-14 19:56:37.469 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:56:37.470 DEBUG 11916 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:56:37.479 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:56:37.480 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:56:37.480 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1489738014<open>)]
+2022-11-14 19:56:37.484 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:56:37.486 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:56:37.487 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:56:37.492 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:56:37.493 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:58:16.960 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/music", parameters={}
+2022-11-14 19:58:16.961 DEBUG 11916 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:58:16.961 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:16.962 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:16.963 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:58:16.967 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:58:16.968 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:58:16.969 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:16.970 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1777376309<open>)] for JPA transaction
+2022-11-14 19:58:16.970 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:58:16.972 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@734b73b1]
+2022-11-14 19:58:16.972 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:58:16.973 DEBUG 11916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:58:16.978 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:58:16.978 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:58:16.979 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1777376309<open>)]
+2022-11-14 19:58:16.980 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:58:16.981 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:58:16.981 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:58:16.983 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:16.983 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:58:38.491 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/api/music", parameters={}
+2022-11-14 19:58:38.492 DEBUG 11916 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#save(Music)
+2022-11-14 19:58:38.493 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:38.494 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=0, name=peterpan, type=pop, singer=exo, publishedDate=2022-10-01, createdAt=null, updatedA (truncated)...]
+2022-11-14 19:58:38.495 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(805040228<open>)] for JPA transaction
+2022-11-14 19:58:38.495 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 19:58:38.496 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@46e8f307]
+2022-11-14 19:58:38.496 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:58:38.498 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select next_val as id_val from hibernate_sequence for update
+2022-11-14 19:58:38.499 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : update hibernate_sequence set next_val= ? where next_val=?
+2022-11-14 19:58:38.503 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 19:58:38.503 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:58:38.503 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(805040228<open>)]
+2022-11-14 19:58:38.503 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : insert into music (created_at, name, published_date, singer, type, updated_at, id) values (?, ?, ?, ?, ?, ?, ?)
+2022-11-14 19:58:38.504 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [2022-11-14T19:58:38.495627500]
+2022-11-14 19:58:38.504 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [peterpan]
+2022-11-14 19:58:38.505 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-10-01]
+2022-11-14 19:58:38.505 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [exo]
+2022-11-14 19:58:38.505 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [pop]
+2022-11-14 19:58:38.505 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [null]
+2022-11-14 19:58:38.505 TRACE 11916 --- [http-nio-8080-exec-10] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [7]
+2022-11-14 19:58:38.510 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:58:38.510 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:58:38.510 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Music [id=7, name=peterpan, type=pop, singer=exo, publishedDate=2022-10-01, createdAt=2022-11-14T19: (truncated)...]
+2022-11-14 19:58:38.512 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:38.512 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 19:58:38.517 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 19:58:38.517 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 19:58:38.518 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:38.518 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2002706436<open>)] for JPA transaction
+2022-11-14 19:58:38.518 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 19:58:38.519 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2a8004c8]
+2022-11-14 19:58:38.519 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:58:38.520 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 19:58:38.523 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 19:58:38.523 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 19:58:38.523 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2002706436<open>)]
+2022-11-14 19:58:38.525 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 19:58:38.526 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 19:58:38.527 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 19:58:38.528 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 19:58:38.529 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:00:13.219 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:00:13.221 DEBUG 11916 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:00:13.223 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:00:13.224 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(63072462<open>)] for JPA transaction
+2022-11-14 20:00:13.224 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:00:13.228 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@22819742]
+2022-11-14 20:00:13.228 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:00:13.230 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:00:13.241 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:00:13.242 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:00:13.242 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(63072462<open>)]
+2022-11-14 20:00:13.246 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:00:13.248 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:00:13.249 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 20:00:13.253 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:00:13.254 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:01:26.855 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:01:26.856 DEBUG 11916 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:01:26.856 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:01:26.856 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(814305440<open>)] for JPA transaction
+2022-11-14 20:01:26.857 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:01:26.858 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@160bfa71]
+2022-11-14 20:01:26.858 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:01:26.859 DEBUG 11916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:01:26.862 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:01:26.862 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:01:26.862 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(814305440<open>)]
+2022-11-14 20:01:26.863 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:01:26.863 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:01:26.863 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 20:01:26.865 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:01:26.865 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:01:50.512 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:01:50.512 DEBUG 11916 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:01:50.512 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:01:50.512 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(702115751<open>)] for JPA transaction
+2022-11-14 20:01:50.512 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:01:50.513 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@270fe822]
+2022-11-14 20:01:50.514 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:01:50.514 DEBUG 11916 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:01:50.516 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:01:50.516 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:01:50.516 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(702115751<open>)]
+2022-11-14 20:01:50.517 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:01:50.518 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:01:50.518 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 20:01:50.519 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:01:50.520 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:02:07.817 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:02:07.817 DEBUG 11916 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:02:07.818 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:07.818 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1115848164<open>)] for JPA transaction
+2022-11-14 20:02:07.819 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:02:07.820 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@9d8ce7]
+2022-11-14 20:02:07.820 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:02:07.821 DEBUG 11916 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:02:07.824 TRACE 11916 --- [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:02:07.824 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:02:07.824 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1115848164<open>)]
+2022-11-14 20:02:07.826 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:02:07.826 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:02:07.827 DEBUG 11916 --- [http-nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 20:02:07.828 DEBUG 11916 --- [http-nio-8080-exec-7] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:07.828 DEBUG 11916 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:02:12.229 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/music", parameters={}
+2022-11-14 20:02:12.232 DEBUG 11916 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping$HttpOptionsHandler#handle()
+2022-11-14 20:02:12.232 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:12.233 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:12.233 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:02:12.237 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : DELETE "/api/music", parameters={}
+2022-11-14 20:02:12.240  WARN 11916 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-11-14 20:02:12.240 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 405 METHOD_NOT_ALLOWED
+2022-11-14 20:02:12.247 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for DELETE "/error", parameters={}
+2022-11-14 20:02:12.249 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-11-14 20:02:12.250 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:12.264 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:02:12.266 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 14 20:02:12 MMT 2022, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+2022-11-14 20:02:12.275 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:02:12.275 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 405
+2022-11-14 20:04:18.135  INFO 11916 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2022-11-14 20:04:18.169  INFO 11916 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-11-14 20:04:18.171  INFO 11916 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-11-14 20:04:18.177  INFO 11916 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 20:04:18.181  INFO 11916 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-11-14 20:04:18.187  INFO 11916 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-11-14 20:04:18.273  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : Starting MusicApplication using Java 17.0.4.1 on MayHninKyi with PID 11916 (D:\javaDev\music\target\classes started by Lenovo in D:\javaDev\music)
+2022-11-14 20:04:18.274  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : No active profile set, falling back to 1 default profile: "default"
+2022-11-14 20:04:18.500  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-14 20:04:18.500  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-11-14 20:04:18.506  INFO 11916 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mhk.music.repo.MusicRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-11-14 20:04:18.506  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2022-11-14 20:04:18.510  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-11-14 20:04:18.510  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-11-14 20:04:18.515  INFO 11916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interfaces.
+2022-11-14 20:04:18.625  INFO 11916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-11-14 20:04:18.626  INFO 11916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-14 20:04:18.626  INFO 11916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-11-14 20:04:18.647  INFO 11916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-14 20:04:18.647  INFO 11916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 369 ms
+2022-11-14 20:04:18.685 DEBUG 11916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2022-11-14 20:04:18.685  INFO 11916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-11-14 20:04:18.692  INFO 11916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-11-14 20:04:18.704  INFO 11916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-11-14 20:04:18.705  INFO 11916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-11-14 20:04:18.744  INFO 11916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-11-14 20:04:18.745  INFO 11916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-11-14 20:04:18.790 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 20:04:18.792 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 20:04:18.810 DEBUG 11916 --- [restartedMain] tor$SharedEntityManagerInvocationHandler : Creating new EntityManager for shared EntityManager invocation
+2022-11-14 20:04:18.877  WARN 11916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-11-14 20:04:18.987 DEBUG 11916 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-11-14 20:04:19.021 DEBUG 11916 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 7 mappings in 'requestMappingHandlerMapping'
+2022-11-14 20:04:19.039 DEBUG 11916 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-11-14 20:04:19.051 DEBUG 11916 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-11-14 20:04:19.142  INFO 11916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-14 20:04:19.162  INFO 11916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-11-14 20:04:19.170  INFO 11916 --- [restartedMain] com.mhk.music.MusicApplication           : Started MusicApplication in 0.931 seconds (JVM running for 4840.725)
+2022-11-14 20:04:19.172  INFO 11916 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-11-14 20:04:30.829  INFO 11916 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-14 20:04:30.829  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-14 20:04:30.830 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-11-14 20:04:30.830 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-11-14 20:04:30.830 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-11-14 20:04:30.833 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@5d1e859e
+2022-11-14 20:04:30.834 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@68f6a57f
+2022-11-14 20:04:30.834 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-11-14 20:04:30.834  INFO 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-11-14 20:04:30.835 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:04:30.836 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:04:30.838 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:30.847 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1395943218<open>)] for JPA transaction
+2022-11-14 20:04:30.848 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:04:30.851 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@30e8aea3]
+2022-11-14 20:04:30.852 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:04:30.860 DEBUG 11916 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:04:30.873 TRACE 11916 --- [http-nio-8080-exec-1] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:04:30.873 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:04:30.874 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1395943218<open>)]
+2022-11-14 20:04:30.877 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:04:30.881 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:04:30.883 DEBUG 11916 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=2, name=peterpan, type=rock, singer=exo, publishedDate=2022-11-13, createdAt=null, update (truncated)...]
+2022-11-14 20:04:30.896 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:30.898 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:04:35.584 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/api/music", parameters={}
+2022-11-14 20:04:35.585 DEBUG 11916 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#delete(Music)
+2022-11-14 20:04:35.585 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:35.591 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=2, name=null, type=null, singer=null, publishedDate=null, createdAt=null, updatedAt=null]]
+2022-11-14 20:04:35.591 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(958587000<open>)] for JPA transaction
+2022-11-14 20:04:35.591 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:04:35.593 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@675f44f3]
+2022-11-14 20:04:35.593 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:04:35.605 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select music0_.id as id1_0_0_, music0_.created_at as created_2_0_0_, music0_.name as name3_0_0_, music0_.published_date as publishe4_0_0_, music0_.singer as singer5_0_0_, music0_.type as type6_0_0_, music0_.updated_at as updated_7_0_0_ from music music0_ where music0_.id=?
+2022-11-14 20:04:35.605 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2022-11-14 20:04:35.612 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:04:35.613 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:04:35.613 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(958587000<open>)]
+2022-11-14 20:04:35.614 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:04:35.615 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(958587000<open>)] for JPA transaction
+2022-11-14 20:04:35.615 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 20:04:35.616 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@614bb022]
+2022-11-14 20:04:35.616 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
+2022-11-14 20:04:35.622 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.deleteById]
+2022-11-14 20:04:35.622 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:04:35.622 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(958587000<open>)]
+2022-11-14 20:04:35.623 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : delete from music where id=?
+2022-11-14 20:04:35.623 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [2]
+2022-11-14 20:04:35.631 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:04:35.633 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/octet-stream', given [*/*] and supported [*/*]
+2022-11-14 20:04:35.633 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:35.634 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:04:35.638 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:04:35.638 DEBUG 11916 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:04:35.638 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:35.639 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(768602303<open>)] for JPA transaction
+2022-11-14 20:04:35.639 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:04:35.640 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@23080b76]
+2022-11-14 20:04:35.640 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:04:35.640 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:04:35.642 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:04:35.642 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:04:35.642 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(768602303<open>)]
+2022-11-14 20:04:35.643 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:04:35.644 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:04:35.644 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:04:35.645 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:04:35.645 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:05:41.564 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:05:41.566 DEBUG 11916 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:05:41.569 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:05:41.572 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2018348296<open>)] for JPA transaction
+2022-11-14 20:05:41.573 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:05:41.577 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3d4f0c65]
+2022-11-14 20:05:41.577 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:05:41.579 DEBUG 11916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:05:41.588 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:05:41.588 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:05:41.589 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2018348296<open>)]
+2022-11-14 20:05:41.593 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:05:41.594 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:05:41.595 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:05:41.604 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:05:41.605 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:06:28.429 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:06:28.429 DEBUG 11916 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:06:28.430 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:06:28.430 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(758957976<open>)] for JPA transaction
+2022-11-14 20:06:28.430 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:06:28.434 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@62c62674]
+2022-11-14 20:06:28.434 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:06:28.435 DEBUG 11916 --- [http-nio-8080-exec-6] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:06:28.439 TRACE 11916 --- [http-nio-8080-exec-6] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:06:28.439 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:06:28.440 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(758957976<open>)]
+2022-11-14 20:06:28.441 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:06:28.442 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:06:28.442 DEBUG 11916 --- [http-nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:06:28.444 DEBUG 11916 --- [http-nio-8080-exec-6] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:06:28.444 DEBUG 11916 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:08:00.750 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:08:00.751 DEBUG 11916 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:08:00.752 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:08:00.754 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(469125967<open>)] for JPA transaction
+2022-11-14 20:08:00.755 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:08:00.759 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1531b641]
+2022-11-14 20:08:00.760 TRACE 11916 --- [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:08:00.762 DEBUG 11916 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:08:00.771 TRACE 11916 --- [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:08:00.771 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:08:00.771 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(469125967<open>)]
+2022-11-14 20:08:00.775 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:08:00.777 DEBUG 11916 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:08:00.777 DEBUG 11916 --- [http-nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:08:00.780 DEBUG 11916 --- [http-nio-8080-exec-8] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:08:00.781 DEBUG 11916 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:08:51.899 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:08:51.900 DEBUG 11916 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:08:51.900 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:08:51.902 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1659852231<open>)] for JPA transaction
+2022-11-14 20:08:51.902 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:08:51.903 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@2d15bdd1]
+2022-11-14 20:08:51.904 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:08:51.904 DEBUG 11916 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:08:51.907 TRACE 11916 --- [http-nio-8080-exec-9] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:08:51.907 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:08:51.907 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1659852231<open>)]
+2022-11-14 20:08:51.908 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:08:51.909 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:08:51.909 DEBUG 11916 --- [http-nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:08:51.910 DEBUG 11916 --- [http-nio-8080-exec-9] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:08:51.910 DEBUG 11916 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:02.174 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:09:02.175 DEBUG 11916 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:09:02.177 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:02.178 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1474983129<open>)] for JPA transaction
+2022-11-14 20:09:02.178 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:09:02.182 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@592d8054]
+2022-11-14 20:09:02.182 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:02.184 DEBUG 11916 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:09:02.191 TRACE 11916 --- [http-nio-8080-exec-10] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:02.191 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:02.191 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1474983129<open>)]
+2022-11-14 20:09:02.194 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:02.195 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:09:02.196 DEBUG 11916 --- [http-nio-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:09:02.199 DEBUG 11916 --- [http-nio-8080-exec-10] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:02.199 DEBUG 11916 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:10.044 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : OPTIONS "/api/music", parameters={}
+2022-11-14 20:09:10.044 DEBUG 11916 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#update(Music)
+2022-11-14 20:09:10.045 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.045 DEBUG 11916 --- [http-nio-8080-exec-1] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.046 DEBUG 11916 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:10.049 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : PUT "/api/music", parameters={}
+2022-11-14 20:09:10.050 DEBUG 11916 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#update(Music)
+2022-11-14 20:09:10.050 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.051 DEBUG 11916 --- [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=5, name=TT, type=rock, singer=Twice, publishedDate=2022-12-10, createdAt=null, updatedAt=n (truncated)...]
+2022-11-14 20:09:10.051 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1730569308<open>)] for JPA transaction
+2022-11-14 20:09:10.052 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:09:10.053 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@572d39c]
+2022-11-14 20:09:10.053 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:09:10.054 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : select music0_.id as id1_0_0_, music0_.created_at as created_2_0_0_, music0_.name as name3_0_0_, music0_.published_date as publishe4_0_0_, music0_.singer as singer5_0_0_, music0_.type as type6_0_0_, music0_.updated_at as updated_7_0_0_ from music music0_ where music0_.id=?
+2022-11-14 20:09:10.054 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [5]
+2022-11-14 20:09:10.056 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:09:10.056 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:10.056 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1730569308<open>)]
+2022-11-14 20:09:10.058 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:10.059 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(1730569308<open>)] for JPA transaction
+2022-11-14 20:09:10.059 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 20:09:10.059 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@40f86047]
+2022-11-14 20:09:10.059 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 20:09:10.068 TRACE 11916 --- [http-nio-8080-exec-2] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 20:09:10.068 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:10.068 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(1730569308<open>)]
+2022-11-14 20:09:10.069 DEBUG 11916 --- [http-nio-8080-exec-2] org.hibernate.SQL                        : update music set created_at=?, name=?, published_date=?, singer=?, type=?, updated_at=? where id=?
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [null]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [TT]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-12-10]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Twice]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [rock]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2022-11-14T20:09:10.058501]
+2022-11-14 20:09:10.070 TRACE 11916 --- [http-nio-8080-exec-2] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [5]
+2022-11-14 20:09:10.076 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:10.078 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:09:10.078 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Music [id=5, name=TT, type=rock, singer=Twice, publishedDate=2022-12-10, createdAt=null, updatedAt=2 (truncated)...]
+2022-11-14 20:09:10.079 DEBUG 11916 --- [http-nio-8080-exec-2] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.080 DEBUG 11916 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:10.084 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:09:10.084 DEBUG 11916 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:09:10.085 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.085 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(106201249<open>)] for JPA transaction
+2022-11-14 20:09:10.085 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:09:10.086 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@5a928ba8]
+2022-11-14 20:09:10.086 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:10.087 DEBUG 11916 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:09:10.088 TRACE 11916 --- [http-nio-8080-exec-3] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:10.089 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:10.089 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(106201249<open>)]
+2022-11-14 20:09:10.090 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:10.090 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:09:10.090 DEBUG 11916 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:09:10.091 DEBUG 11916 --- [http-nio-8080-exec-3] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:10.091 DEBUG 11916 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:18.453 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : PUT "/api/music", parameters={}
+2022-11-14 20:09:18.453 DEBUG 11916 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#update(Music)
+2022-11-14 20:09:18.454 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:18.455 DEBUG 11916 --- [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Music [id=4, name=yes or yes, type=pop, singer=Twice, publishedDate=2022-12-10, createdAt=null, upda (truncated)...]
+2022-11-14 20:09:18.455 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(599585347<open>)] for JPA transaction
+2022-11-14 20:09:18.456 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:09:18.457 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@66be7850]
+2022-11-14 20:09:18.457 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:09:18.458 DEBUG 11916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : select music0_.id as id1_0_0_, music0_.created_at as created_2_0_0_, music0_.name as name3_0_0_, music0_.published_date as publishe4_0_0_, music0_.singer as singer5_0_0_, music0_.type as type6_0_0_, music0_.updated_at as updated_7_0_0_ from music music0_ where music0_.id=?
+2022-11-14 20:09:18.458 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [INTEGER] - [4]
+2022-11-14 20:09:18.460 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById]
+2022-11-14 20:09:18.460 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:18.460 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(599585347<open>)]
+2022-11-14 20:09:18.461 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:18.461 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(599585347<open>)] for JPA transaction
+2022-11-14 20:09:18.462 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2022-11-14 20:09:18.462 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1af6bc28]
+2022-11-14 20:09:18.462 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 20:09:18.463 TRACE 11916 --- [http-nio-8080-exec-4] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2022-11-14 20:09:18.463 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:18.463 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(599585347<open>)]
+2022-11-14 20:09:18.463 DEBUG 11916 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : update music set created_at=?, name=?, published_date=?, singer=?, type=?, updated_at=? where id=?
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [TIMESTAMP] - [null]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [2] as [VARCHAR] - [yes or yes]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [3] as [DATE] - [2022-12-10]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [4] as [VARCHAR] - [Twice]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [5] as [VARCHAR] - [pop]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [6] as [TIMESTAMP] - [2022-11-14T20:09:18.461429400]
+2022-11-14 20:09:18.464 TRACE 11916 --- [http-nio-8080-exec-4] o.h.type.descriptor.sql.BasicBinder      : binding parameter [7] as [INTEGER] - [4]
+2022-11-14 20:09:18.468 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:18.469 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:09:18.469 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [Music [id=4, name=yes or yes, type=pop, singer=Twice, publishedDate=2022-12-10, createdAt=null, upda (truncated)...]
+2022-11-14 20:09:18.470 DEBUG 11916 --- [http-nio-8080-exec-4] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:18.470 DEBUG 11916 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-11-14 20:09:18.473 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/music", parameters={}
+2022-11-14 20:09:18.474 DEBUG 11916 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.mhk.music.controller.MusicController#getAll()
+2022-11-14 20:09:18.474 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:18.474 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Found thread-bound EntityManager [SessionImpl(2125033077<open>)] for JPA transaction
+2022-11-14 20:09:18.475 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2022-11-14 20:09:18.476 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@7829331d]
+2022-11-14 20:09:18.476 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:18.476 DEBUG 11916 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : select music0_.id as id1_0_, music0_.created_at as created_2_0_, music0_.name as name3_0_, music0_.published_date as publishe4_0_, music0_.singer as singer5_0_, music0_.type as type6_0_, music0_.updated_at as updated_7_0_ from music music0_
+2022-11-14 20:09:18.479 TRACE 11916 --- [http-nio-8080-exec-5] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2022-11-14 20:09:18.479 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Initiating transaction commit
+2022-11-14 20:09:18.479 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Committing JPA transaction on EntityManager [SessionImpl(2125033077<open>)]
+2022-11-14 20:09:18.481 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.orm.jpa.JpaTransactionManager        : Not closing pre-bound JPA EntityManager after transaction
+2022-11-14 20:09:18.481 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-11-14 20:09:18.481 DEBUG 11916 --- [http-nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Music [id=3, name=beautiful, type=pop, singer=exo, publishedDate=2022-11-13, createdAt=2022-11-13T1 (truncated)...]
+2022-11-14 20:09:18.482 DEBUG 11916 --- [http-nio-8080-exec-5] o.j.s.OpenEntityManagerInViewInterceptor : Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-11-14 20:09:18.484 DEBUG 11916 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

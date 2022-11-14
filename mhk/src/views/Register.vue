@@ -47,7 +47,7 @@
                     gender:this.gender,
                     about:this.about
                 });
-                this.$router.push({path: "/home"})
+                this.$router.push({path: "/profile"})
             }
         }
     }
