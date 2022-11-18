@@ -43,7 +43,7 @@ public class BookServiceImpl implements BookServiceInter {
 		findBook.setPrice(book.getPrice());
 		findBook.setType(book.getType());
 		findBook.setPublishedDate(book.getPublishedDate());
-		findBook.setCreatedAt(book.getCreatedAt());
+		//findBook.setCreatedAt(book.getCreatedAt());
 		findBook.setUpdatedAt(LocalDateTime.now());
 		
 		return repo.save(findBook);
