@@ -1,46 +1,32 @@
 <template>
-  <html>
-    <head></head>
-    <body>
-        <div>
-            <h1>Welcome to home screen</h1>
-            <P>Always be ready at {{pm }}</P>
-            <!-- <h2>{{count.data().count.toString()=="8" ? "My Number is 8": "Default" }}</h2> -->
-            <p>My name is {{username}}</p>
-            <MyCount></MyCount>
-        </div>
-    </body>
-  </html>
+    <h1> Welcome to Home {{userInfo.name}}</h1>
+  
 </template>
 
 <script>
-import MyCount from "../components/Count.vue";
-
 export default {
-    name: "home",
-    components: {
-        MyCount
-    },
-
+    name:"Home",
     data(){
-        return {
-            username: "ki ki",
-            pm: "4:58PM",
-            count: MyCount,
-            isBtnDisable: false,
+        return{
+            userInfo: "",
         };
     },
-
     created(){
-        console.log(MyCount.data().count);
+    this.userInfo = this.$store.state.userInfo;
+    this.$store.watch(
+      () => {
+        return this.$store.state.userInfo;
+      },
+      (newVal, oldVal) =>{
+        this.userInfo = newVal;
+      },
+      {
+        deep: true,
+      }
+      );   
     },
-
-    methods: {
-        
-    }
 }
 </script>
-
 
 <style>
 
