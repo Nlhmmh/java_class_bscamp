@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS exbook_register;
+CREATE DATABASE IF NOT EXISTS exbook_register;
