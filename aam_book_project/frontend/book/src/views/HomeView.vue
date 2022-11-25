@@ -13,7 +13,7 @@
       :items="bookList"
       :items-per-page="5">
 
-        <template v-slot:item.actions="{item}">
+        <template v-slot:item.btn="{item}">
 
           <v-btn class="mr-3" color="primary" fab x-small @click="onClickEditBtn(item)">
             <v-icon>mdi-pencil</v-icon>
@@ -35,11 +35,11 @@
         <v-card-text>
           <v-form ref="createBookForm" v-model="createBookForm">
 
-            <v-text-field v-model="name" label="Name" placeholder="Harry Potter: The Goblet of Fire"
+            <v-text-field v-model="name" label="Name" placeholder="Enter Book Name"
               :rules="[(v) => !!v || 'Required']" required>
             </v-text-field>
 
-            <v-text-field v-model="author" label="Author" placeholder="JK.Rowling"
+            <v-text-field v-model="author" label="Author" placeholder="Enter Author Name"
               :rules="[(v) => !!v || 'Required']" required>
             </v-text-field>
 
@@ -48,7 +48,7 @@
             </v-text-field>
 
             <v-select v-model="type" label="Type"
-              :items="['romance','adventure','sciencefiction']"
+              :items="['romance','adventure','Horror']"
               :rules="[(v) => !!v || 'Required']" required>
             </v-select>
 
@@ -70,11 +70,11 @@
         <v-card-text>
           <v-form ref="editBookForm" v-model="editBookForm">
 
-            <v-text-field v-model="name" label="Name" placeholder="Harry Potter: The Goblet of Fire"
+            <v-text-field v-model="name" label="Name" placeholder="Enter Book Name"
               :rules="[(v) => !!v || 'Required']" required>
             </v-text-field>
 
-            <v-text-field v-model="author" label="Author" placeholder="JK.Rowling"
+            <v-text-field v-model="author" label="Author" placeholder="Enter Author Name"
               :rules="[(v) => !!v || 'Required']" required>
             </v-text-field>
 
@@ -83,7 +83,7 @@
             </v-text-field>
 
             <v-select v-model="type" label="Type"
-              :items="['romance','adventure','sciencefiction']"
+              :items="['romance','adventure','Horror']"
               :rules="[(v) => !!v || 'Required']" required>
             </v-select>
 
@@ -174,7 +174,7 @@
           },
           {
             text: 'Actions',
-            value: 'actions',
+            value: 'btn',
           },
         ],
         bookList: [
@@ -231,7 +231,7 @@
             author: this.author,
             price: this.price,
             type: this.type,
-            publishedDate: "2022-11-18"
+            publishedDate: "2020-1-1"
           }
 
           const resp = await api.post("/api/create", createData);
@@ -264,7 +264,7 @@
             author: this.author,
             price: this.price,
             type: this.type,
-            publishedDate: "2022-11-18"
+            publishedDate: "2020-1-1"
           }
 
           const resp = await api.put("/api/update", editData);
