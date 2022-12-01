@@ -68,12 +68,12 @@ export default {
         onClickRegisterBtn(){
             
             if(this.$refs.registerForm.validate()){
-                console.log("Register success");
-                console.log(this.name);
-                console.log(this.mail);
-                console.log(this.age);
-                console.log(this.gender);
-                console.log(this.selfIntro);
+                // console.log("Register success");
+                // console.log(this.name);
+                // console.log(this.mail);
+                // console.log(this.age);
+                // console.log(this.gender);
+                // console.log(this.selfIntro);
 
                 // Store in Vuex state
                 // mutations
